@@ -1,0 +1,16 @@
+body {
+    background-image: url(bgespace.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.vidéo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titre{
+    color: rgb(217, 241, 6);
+    font-size: 30px;
+    text-decoration: underline;
+    text-shadow: 10px 10px 10px rgba(255, 255, 255, 0.4);
+}

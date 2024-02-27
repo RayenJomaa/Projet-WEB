@@ -1,0 +1,74 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-image: url(gymnase-equipement-cyclisme-salle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    width: 800px;
+    height: 300px;
+    margin: 0; 
+    overflow: hidden;
+   
+}
+
+.resume_box {
+    width: 700px;
+    height: 600px;
+    margin-left: 50%;
+    border: 5px solid #00BFFF;
+    margin-top: 50px;
+    backdrop-filter: Blur(5px) ;
+   
+   
+}
+ .input input {
+    background-color:transparent;
+    border: none;
+    border-bottom: 2px solid #00BFFF;
+    width: 300px;
+    color: #FFFF;
+}
+
+button {
+    background-color: #00BFFF;
+    margin-left: 50px;
+    border-radius: 20px;
+    width: 160px;
+    height: 40px;
+    color: #FFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.heading {
+    background-color: #00BFFF;
+    max-width: 400px;
+    text-align: center  ;
+    margin-left: 125px;
+    text-decoration: double;
+}
+
+.input {
+    margin-top: 100px;
+    margin-left: 20px;
+    color: #FFFF;
+}
+
+.ff {
+    display: flex;
+    gap: 150px;
+}
+
+.inf {
+    margin-top: 130px;
+    color: #FFFF;
+}
+
+.ext {
+    display: flex;
+    gap: 40px;
+} 
+
+
