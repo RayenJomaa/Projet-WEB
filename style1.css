@@ -96,6 +96,7 @@ body {
 
 .imagebv {
     /* background-color: rgba(234, 255, 0, 0.1); */
+    margin-top: 25px;
     border-radius: 20%;
     display: block;
     margin-left: auto;
