@@ -1,0 +1,16 @@
+/* body{
+    background-image: url(gymnase-equipement-cyclisme-salle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 800px;
+    height: 300px;
+    margin: 0; 
+    overflow: hidden;
+} */
+img.displayed{
+    width: 600px;
+    height: 300px;
+    border: 1px #aaa transparent;
+    margin-top: 5%;
+    margin-left: 50%;    
+}
