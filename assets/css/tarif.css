@@ -6,11 +6,104 @@
     height: 300px;
     margin: 0; 
     overflow: hidden;
-} */
-img.displayed{
-    width: 600px;
-    height: 300px;
-    border: 1px #aaa transparent;
-    margin-top: 5%;
-    margin-left: 50%;    
+*/
+
+.FFF{
+    font-size: 32px;
+    font-weight: bold;
+    background-color: rgb(244, 199, 53);
+    align-items: center;
+    text-decoration: underline;
+}
+.imagebv{
+    margin-left: 80%;
+}
+.bloc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-around;
+    border: 2px solid black;
+}
+
+
+
+.bloc1 {
+    background-color: aqua;
+    /* align-items: center; */
+    align-content: center;
+    justify-content: center;
+    /* margin-left: 10%; */
+    /* justify-content: center; */
+    width: 50%;
+    justify-self: center;
+    justify-items: center;
+    align-self: center;
+    align-self: center;
+
+}
+
+
+
+.bloc2{
+    margin-left: 5px;
+    background-color: aqua;
+    /* align-items: center; */
+    align-content: center;
+    justify-content: center;
+    /* margin-left: 10%; */
+    /* justify-content: center; */
+    width: 50%;
+    justify-self: center;
+    justify-items: center;
+    align-self: center;
+    align-self: center;
+
+}
+
+h1{
+    margin-left: 25%;
+}
+h2{
+    margin-left: 50%;
+    font-size: 72px;
+}
+h3{
+    margin-left: 25%;
+}
+h4{
+    margin-left: 33%;
+    font-size: 25px;
+}
+h5{
+    margin-left: 40%;
+    font-size: 25px;
+}
+h6{
+    margin-left: 38%;
+    font-size: 25px;
+}
+
+.p1{
+    margin-left: 35%;
+}
+.p2{
+    margin-left: 36%;
+}
+.p3{
+    margin-left: 38.5%;
+}
+
+.NB{
+    margin-left: 5%;
+    font-size: 25px;
+}
+
+button{
+    background-color: black;
+    color: aliceblue;
+    font-size: 25px;
+    align-items: center;
+    margin-left: 37%;
+    margin-bottom: 20px ;
 }
