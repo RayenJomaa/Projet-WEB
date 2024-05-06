@@ -16,36 +16,45 @@
             <div class="input">
                 <form action="">
                     <div>
-                        <label for="first_name" class="input_label">First Name:</label><br>
+                        <label for="first_name" class="name">First Name:</label><br>
                         <input type="text" id="first_name" name="first_name" >
                     </div>
                     <br>
                     <div>
-                        <label for="last_name" class="input_label">Last Name:</label><br>
+                        <label for="last_name" class="name">Last Name:</label><br>
                         <input type="text" id="last_name" name="last_name">
                         
                     </div>
                     <br>
-                    <div>
-                        <label class="nom">Sexe:</label> <input type="radio" name="Sexe"> <label> Masculin </label> <input type="radio" name="Sexe"> <label> Féminin </label>
+                    <div class="abc0">
+                        <label class="nom">Sexe:</label>  
+                        <div>
+                            <label> Masculin </label>
+                            <input type="radio" name="Sexe">
+                        </div>
+                        <div>
+                            <label> Féminin </label>
+                            <input type="radio" name="Sexe">
+                        </div>
                     </div>
+                    
                     <br>
                     <div>
-                        <label for="email" class="input_label">Email Address:</label><br>
+                        <label for="email" class="input_label"id="email">Email Address:</label><br>
                         <input type="email" id="email" name="email" >
                     </div>
                     <br>
                     <div>
-                        <label for="phone_number" class="input_label">Phone Number:</label><br>
+                        <label for="phone_number" class="input_label" id="pn">Phone Number:</label><br>
                         <input type="tel" id="phone_number" name="phone_number">
                     </div>
                     <br>
                     <div>
-                        <label for="Message" class="input_label">Message:</label><br>
+                        <label for="Message" class="input_label" id="message">Message:</label><br>
                         <input type="text" id="Message" name="Message">
                     </div>
                     <br><br>
-                    <button type="submit">Contact Us</button>
+                    <button type="submit" onclick="tester()" id="submit">Contact Us</button>
                 </form>
             </div>
             <div class="inf">
@@ -54,12 +63,13 @@
                 <h3>based in :</h3>
                 <p>Tunis</p>
                 <div class="ext">
-                    <i class='bx bxl-facebook-circle'></i>
-                    <i class='bx bxl-instagram' ></i>
-                    <i class='bx bxl-twitter' ></i>
+                    <i class='bx bxl-facebook-circle' id="facebook"></i>
+                    <i class='bx bxl-instagram' id="instagram"></i>
+                    <i class='bx bxl-twitter' id="twitter"></i>
                 </div>
             </div>
         </div>
     </div>
+    <script src="contact.js"></script>
 </body>
 </html> 
