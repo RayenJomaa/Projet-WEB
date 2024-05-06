@@ -1,12 +1,29 @@
 body {
-    background-image: url(../img/bgespace.png);
+    background-image: url(../img/3d-gym-equipment\ \(3\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
 }
-.vidéo{
-    display: flex;
-    justify-content: center;
+.FFF{
+    font-size: 32px;
+    font-weight: bold;
+    background-color: rgb(245, 127, 16);
     align-items: center;
+    text-decoration: underline;
+}
+.imagebv{
+    margin-top: -3%;
+    margin-left: 80%;
+    margin-bottom: 0%;
+}
+
+.vidéo{
+    margin-left: 28%;
+    background-color: rgb(245, 127, 16);
+    width: 43.5%;
+    margin-top: -1.4%;
+    align-self: center;
+    justify-content: center;
 }
 .titre{
     color: rgb(217, 241, 6);
