@@ -4,7 +4,7 @@ function tester() {
     var email = document.getElementById("email").value;
     var phoneNumber = document.getElementById("phone_number").value;
     var message = document.getElementById("Message").value;
-   
+  
 
     var errorMessage = "";
 
@@ -44,7 +44,9 @@ function tester() {
     return true;
 }
 
-
+var facebookIcon = document.getElementById("facebook");
+var instagramIcon = document.getElementById("instagram");
+var twitterIcon = document.getElementById("twitter");
 
 facebookIcon.addEventListener("mouseover", agrandirIcone);
 instagramIcon.addEventListener("mouseover", agrandirIcone);
