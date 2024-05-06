@@ -14,34 +14,33 @@
          <h1 class="heading">CONTACT US</h1>
         <div class="ff">
             <div class="input">
-                <form action="">
+                <form action="" onsubmit="return tester()">
                     <div>
                         <label for="first_name" class="name">First Name:</label><br>
-                        <input type="text" id="first_name" name="first_name" >
+                        <input type="text" id="first_name" name="first_name">
                     </div>
                     <br>
                     <div>
                         <label for="last_name" class="name">Last Name:</label><br>
                         <input type="text" id="last_name" name="last_name">
-                        
                     </div>
                     <br>
                     <div class="abc0">
                         <label class="nom">Sexe:</label>  
                         <div>
                             <label> Masculin </label>
-                            <input type="radio" name="Sexe">
+                            <input type="radio" name="Sexe" id="masculin">
                         </div>
                         <div>
                             <label> Féminin </label>
-                            <input type="radio" name="Sexe">
+                            <input type="radio" name="Sexe" id="feminin">
                         </div>
                     </div>
                     
                     <br>
                     <div>
-                        <label for="email" class="input_label"id="email">Email Address:</label><br>
-                        <input type="email" id="email" name="email" >
+                        <label for="email" class="input_label" id="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email">
                     </div>
                     <br>
                     <div>
@@ -54,7 +53,7 @@
                         <input type="text" id="Message" name="Message">
                     </div>
                     <br><br>
-                    <button type="submit" onclick="tester()" id="submit">Contact Us</button>
+                    <button type="submit" id="submit">Contact Us</button>
                 </form>
             </div>
             <div class="inf">
@@ -72,4 +71,4 @@
     </div>
     <script src="contact.js"></script>
 </body>
-</html> 
+</html>
