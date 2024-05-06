@@ -1,3 +1,38 @@
+
+var facebookIcon = document.getElementById("facebook");
+var instagramIcon = document.getElementById("instagram");
+var twitterIcon = document.getElementById("twitter");
+
+facebookIcon.addEventListener("mouseover", agrandirIcone);
+instagramIcon.addEventListener("mouseover", agrandirIcone);
+twitterIcon.addEventListener("mouseover", agrandirIcone);
+
+function agrandirIcone(event) {
+    event.target.style.transform = "scale(3)";
+    event.target.style.color ="#00BFFF"
+}
+
+facebookIcon.addEventListener("mouseout", retrecirIcone);
+instagramIcon.addEventListener("mouseout", retrecirIcone);
+twitterIcon.addEventListener("mouseout", retrecirIcone);
+
+function retrecirIcone(event) {
+    event.target.style.transform = "scale(1)";
+    event.target.style.color ="white" ;
+}
+
+var submit = document.getElementById("submit");
+
+
+submit.addEventListener("mouseover", function() {
+    this.style.transform = "scale(1.1)";
+});
+submit.addEventListener("mouseout", function() {
+    this.style.transform = "scale(1)";
+});
+
+
+
 function tester() {
     var firstName = document.getElementById("first_name").value;
     var lastName = document.getElementById("last_name").value;
@@ -43,37 +78,3 @@ function tester() {
     
     return true;
 }
-
-var facebookIcon = document.getElementById("facebook");
-var instagramIcon = document.getElementById("instagram");
-var twitterIcon = document.getElementById("twitter");
-
-facebookIcon.addEventListener("mouseover", agrandirIcone);
-instagramIcon.addEventListener("mouseover", agrandirIcone);
-twitterIcon.addEventListener("mouseover", agrandirIcone);
-
-function agrandirIcone(event) {
-    event.target.style.transform = "scale(3)";
-    event.target.style.color ="#00BFFF"
-}
-
-facebookIcon.addEventListener("mouseout", retrecirIcone);
-instagramIcon.addEventListener("mouseout", retrecirIcone);
-twitterIcon.addEventListener("mouseout", retrecirIcone);
-
-function retrecirIcone(event) {
-    event.target.style.transform = "scale(1)";
-    event.target.style.color ="white" ;
-}
-
-var submit = document.getElementById("submit");
-
-
-submit.addEventListener("mouseover", function() {
-    this.style.transform = "scale(1.1)";
-});
-submit.addEventListener("mouseout", function() {
-    this.style.transform = "scale(1)";
-});
-
-
