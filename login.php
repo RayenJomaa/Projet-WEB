@@ -11,12 +11,12 @@
   $password = $_POST["password"];
   if (isset($_POST["checkbx"]) && $_POST["checkbx"]=="1"){
     $sql = "SELECT * FROM users WHERE username = '$name' AND password = '$password'";
-    if(mysqli_query($conn,$sql)){
+    $result = mysqli_query($conn,$sql);
+    if(mysqli_num_rows($result) > 0){
       header('Location: index.html');
     }else{
-      header('location: #');//direction registraion
+      header('location: contact.html');//redirection to registraion page
     }
-
   }
 ?>
 
