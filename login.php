@@ -1,3 +1,25 @@
+<?php
+  include("database.php");
+  set_error_handler(function(int $errno, string $errstr) {
+    if ((strpos($errstr, 'Undefined array key') === false) && (strpos($errstr, 'Undefined variable') === false)) {
+        return false;
+    } else {
+        return true;
+    }
+  }, E_WARNING);
+  $name=$_POST["username"];
+  $password = $_POST["password"];
+  if (isset($_POST["checkbx"]) && $_POST["checkbx"]=="1"){
+    $sql = "SELECT * FROM users WHERE username = '$name' AND password = '$password'";
+    if(mysqli_query($conn,$sql)){
+      header('Location: index.html');
+    }else{
+      header('location: #');//direction registraion
+    }
+
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,12 +33,12 @@
 <body>
   <div class="login-container">
     <h1>GYM WAVE</h1>
-    <form action="#" method="post">
+    <form  method="post" action="login.php">
       <input  type="text" name="username" placeholder="Username" required> <br> <br> 
       <input  type="password" name="password" placeholder="Password" required>
-      <input type="checkbox"  name="vehicle1">
+      <input type="checkbox"  name="checkbx" value = "1">
       <label class="check"> Je ne suis pas un robot</label><br>
-      <button class="buttonlogin"><a  class="ktiba" href="login.html">SUMBIT</a></button>
+      <button class="buttonlogin"><a  class="ktiba">SUMBIT</a></button>
     </form>
 
     <div class="social-media">
