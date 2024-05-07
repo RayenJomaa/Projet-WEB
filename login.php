@@ -15,7 +15,7 @@
     if(mysqli_num_rows($result) > 0){
       header('Location: index.html');
     }else{
-      header('location: contact.html');//redirection to registraion page
+      header('location: registration.php');//redirection to registraion page
     }
   }
 ?>
