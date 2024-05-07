@@ -10,22 +10,23 @@
     $name=$_POST["Full_name"];
     $password = $_POST["mdp"];
     $verif_password = $_POST["mdp2"];
-    if($password != $verif_password){
-        echo '<script type="text/javascript">';
-        echo 'alert("That\'s not the password");';
-        echo '</script>';
-
-    }else{
-        $sql = "SELECT * FROM users WHERE username = '$name' AND password = '$password'";
-        $result = mysqli_query($conn,$sql);
-        if(mysqli_num_rows($result) > 0){
+    if($name != "" && $password !=""){
+        if($password != $verif_password){
             echo '<script type="text/javascript">';
-            echo 'alert("user already exists");';
+            echo 'alert("That\'s not the password");';
             echo '</script>';
         }else{
-            $sql = "INSERT INTO users(username,password) VALUES ('$name','$password')";
+            $sql = "SELECT * FROM users WHERE username = '$name' AND password = '$password'";
             $result = mysqli_query($conn,$sql);
-            // header('location: index.html');//redirection to registraion page
+            if(mysqli_num_rows($result) > 0){
+                echo '<script type="text/javascript">';
+                echo 'alert("user already exists");';
+                echo '</script>';
+            }else{
+                $sql = "INSERT INTO users(username,password) VALUES ('$name','$password')";
+                $result = mysqli_query($conn,$sql);
+                header('location: index.html');//redirection to index page
+            }
         }
     }
 ?>
@@ -36,8 +37,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/img/contact-icon-17.png"/>
     <title>Contact Us</title>
-    <!-- <link rel="stylesheet" href="assets/css/contact.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="resume_box">
