@@ -1,3 +1,8 @@
+window.addEventListener('load', function() {
+    console.log('Window loaded');
+});
+
+
 function tester() {
     var firstName = document.getElementById("first_name").value;
     var lastName = document.getElementById("last_name").value;
@@ -72,3 +77,8 @@ submit.addEventListener("mouseover", function() {
 submit.addEventListener("mouseout", function() {
     this.style.transform = "scale(1)";
 });
+document.getElementById('first_name').addEventListener('focus', function() {
+    console.log('First name field focused');
+    
+});
+
